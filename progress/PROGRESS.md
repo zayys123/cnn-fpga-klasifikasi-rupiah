@@ -10,7 +10,7 @@ Status keseluruhan: **Repository scaffold dibuat; riset dataset dan baseline mod
 - [x] Nama proyek dan judul ditetapkan.
 - [x] Struktur direktori awal disiapkan.
 - [ ] Scaffold diunggah ke repository GitHub.
-- [ ] README diperiksa dan disesuaikan dengan ketentuan tugas/kontes.
+- [ ] README diperiksa dan disesuaikan dengan ketentuan tugas.
 - [ ] Versi toolchain dicatat.
 
 ### Phase 02 — Dataset
