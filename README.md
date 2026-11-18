@@ -1,6 +1,7 @@
 # Implementasi CNN Berbasis FPGA untuk Klasifikasi Nominal Uang Kertas Rupiah
 
-**Nama  :** Zayyan Sabilillah 
+**Nama  :** Zayyan Sabilillah
+
 **NIM   :** 101022300020
 
 **Nama proyek:** Rupiah-Vision  
