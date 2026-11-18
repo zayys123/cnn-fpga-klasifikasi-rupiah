@@ -2,6 +2,7 @@
 
 **Nama  :** Zayyan Sabilillah 
 **NIM   :** 101022300020
+
 **Nama proyek:** Rupiah-Vision  
 **Platform target:** Terasic DE10-Standard (Cyclone V SoC FPGA)  
 **Metode:** Convolutional Neural Network (CNN)  
