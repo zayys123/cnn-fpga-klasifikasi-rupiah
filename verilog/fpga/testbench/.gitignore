@@ -1,0 +1,10 @@
+# ModelSim generated simulation library
+work/
+
+# ModelSim generated files
+transcript
+vsim.wlf
+*.wlf
+
+# Simulation waveform files
+*.vcd
