@@ -1,0 +1,65 @@
+{
+  "module": "Conv1 INT8",
+  "images": 14,
+  "input_shape": [
+    14,
+    3,
+    32,
+    32
+  ],
+  "weight_shape": [
+    8,
+    3,
+    3,
+    3
+  ],
+  "output_shape": [
+    14,
+    8,
+    32,
+    32
+  ],
+  "input_order": "NCHW, CHW per image",
+  "weight_order": "OIHW, C-order",
+  "output_order": "NCHW, C-order",
+  "padding": 1,
+  "stride": 1,
+  "activation": "ReLU",
+  "requantization": "Q31, nearest ties upward",
+  "output_type": "UINT8",
+  "saturation_count": 0,
+  "output_vectors": 114688,
+  "golden_final_logits": "EXACT MATCH",
+  "files": {
+    "input": {
+      "filename": "conv1_input_images.mem",
+      "bytes": 129024,
+      "sha256": "6d1717219030ff3e7b1d11ce39b3cd4e80d8a5bb9e18343cc94bbe1107160f11"
+    },
+    "weights": {
+      "filename": "conv1_weights_int8.mem",
+      "bytes": 648,
+      "sha256": "0626039761812ce0d8cbed5ac742950ddf3b7bd7a4023d581e8d5bfe4fc8966c"
+    },
+    "bias": {
+      "filename": "conv1_bias_int32.mem",
+      "bytes": 72,
+      "sha256": "767585f752dc6d3d1d15b2c6fd968810147326bc50d92a633a284fc285fd5304"
+    },
+    "multiplier": {
+      "filename": "conv1_multiplier_q31.mem",
+      "bytes": 72,
+      "sha256": "1daca9300be188fe80bc4ac93446f1f6e2edaa29ca85cde8fe617e7239126afc"
+    },
+    "shift": {
+      "filename": "conv1_shift_s8.mem",
+      "bytes": 24,
+      "sha256": "7a8fbfd52097e77d6edb7f4c934deb1a8fbfbda00d3e3998e3297748a0894e7d"
+    },
+    "expected": {
+      "filename": "conv1_expected_outputs.mem",
+      "bytes": 344064,
+      "sha256": "66175adad196109ce855138bc4abbef6bb43f45556b7db3f14ce8fac9a38fa03"
+    }
+  }
+}
