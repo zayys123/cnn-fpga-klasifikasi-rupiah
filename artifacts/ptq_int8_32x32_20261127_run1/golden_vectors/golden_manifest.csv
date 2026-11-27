@@ -1,0 +1,15 @@
+﻿index,source_path,true_class_index,predicted_class_index,input_mem,expected_logits_mem,expected_class_file
+0,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00008.png,0,0,input_000.mem,expected_logits_000.mem,expected_class_000.txt
+1,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00009.png,0,0,input_001.mem,expected_logits_001.mem,expected_class_001.txt
+2,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00012.png,0,0,input_002.mem,expected_logits_002.mem,expected_class_002.txt
+3,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00013.png,0,0,input_003.mem,expected_logits_003.mem,expected_class_003.txt
+4,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00014.png,0,0,input_004.mem,expected_logits_004.mem,expected_class_004.txt
+5,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00016.png,0,0,input_005.mem,expected_logits_005.mem,expected_class_005.txt
+6,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00020.png,0,0,input_006.mem,expected_logits_006.mem,expected_class_006.txt
+7,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00028.png,0,0,input_007.mem,expected_logits_007.mem,expected_class_007.txt
+8,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00036.png,0,0,input_008.mem,expected_logits_008.mem,expected_class_008.txt
+9,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00037.png,0,0,input_009.mem,expected_logits_009.mem,expected_class_009.txt
+10,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00040.png,0,0,input_010.mem,expected_logits_010.mem,expected_class_010.txt
+11,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00041.png,0,0,input_011.mem,expected_logits_011.mem,expected_class_011.txt
+12,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00054.png,0,0,input_012.mem,expected_logits_012.mem,expected_class_012.txt
+13,C:\Users\Victus\Downloads\New folder\Uang Baru_rupiahvision_work\processed_fullframe_v3\32x32_rgb\validation\1000\rupiah_00081.png,0,0,input_013.mem,expected_logits_013.mem,expected_class_013.txt

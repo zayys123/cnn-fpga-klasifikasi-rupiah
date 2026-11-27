@@ -1,0 +1,18 @@
+{
+  "images_verified": 14,
+  "final_logits_exact_match": true,
+  "vectors_per_layer": {
+    "conv1": 114688,
+    "conv2": 57344,
+    "conv3": 21504
+  },
+  "total_vectors": 193536,
+  "record_width_bits": 96,
+  "record_width_hex": 24,
+  "layer_ids": {
+    "0": "conv1",
+    "1": "conv2",
+    "2": "conv3"
+  },
+  "output_file": "artifacts\\ptq_int8_32x32_20261127_run1\\rtl_vectors\\requant_actual_vectors.mem"
+}

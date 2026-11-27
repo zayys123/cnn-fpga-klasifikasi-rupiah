@@ -1,0 +1,404 @@
+{
+  "activation_scales": {
+    "relu1": 0.004341609805238013,
+    "relu2": 0.027929102205762675,
+    "relu3": 0.21833531996783087
+  },
+  "baseline": {
+    "checkpoint": "C:\\Users\\Victus\\Downloads\\New folder\\Uang Baru_rupiahvision_work\\cnn_training_v1\\experiment_32x32\\best_model_state_dict.pt",
+    "checkpoint_sha256": "8d0a3bae06a6a7fae0f916832f4bf83f7d6d776f09460b2dc6b745d020af6a66",
+    "selected_epoch": 98
+  },
+  "classes": {
+    "1000": 0,
+    "10000": 3,
+    "100000": 6,
+    "2000": 1,
+    "20000": 4,
+    "5000": 2,
+    "50000": 5
+  },
+  "conv_weight_scales": {
+    "conv1": [
+      0.0018612885569024274,
+      0.002354413974942185,
+      0.0019059588355342233,
+      0.002216033578857662,
+      0.0015081826626785158,
+      0.002428058798857561,
+      0.0016739133774764895,
+      0.001848898300035732
+    ],
+    "conv2": [
+      0.0022450593982155866,
+      0.004022702926725854,
+      0.003600366237595325,
+      0.0040529168496920365,
+      0.003351607191281056,
+      0.004109223527232493,
+      0.0025513284788356992,
+      0.0009603111410704185,
+      0.0029924277245529053,
+      0.0031004996280970536,
+      0.0009232075430276826,
+      0.002522375874631987,
+      0.0029139180821696605,
+      0.00520495354659914,
+      0.0029011983571090097,
+      0.0028667630642417847
+    ],
+    "conv3": [
+      0.0008053357793590216,
+      0.004278765419336755,
+      0.003590901536265696,
+      0.003197000486644234,
+      0.0015874360724696963,
+      0.002586882180116308,
+      0.0021014875314367097,
+      0.0031859473449977363,
+      0.0006953787029258848,
+      0.003008382057580422,
+      0.002481686787342462,
+      0.0024672488527973805,
+      0.0007724038611246845,
+      0.004183587596172423,
+      0.0006816044567138191,
+      0.006098566562171996,
+      0.002156525146304153,
+      0.002167501318173146,
+      0.003487735517381683,
+      0.0007479310505033478,
+      0.004125568810410387,
+      0.0022330068227813,
+      0.003944126170451247,
+      0.0035353666684758943
+    ]
+  },
+  "fc_weight_scale": 0.01005771310310664,
+  "fp32_validation_reproduction": {
+    "accuracy": 0.672514619883041,
+    "macro_f1": 0.672592042048293,
+    "macro_precision": 0.6716311608255342,
+    "macro_recall": 0.6912628376032156,
+    "validation_images": 171
+  },
+  "gap_input_scale": 0.0034114893744973574,
+  "input": {
+    "color_order": "RGB",
+    "layout": "CHW",
+    "scale": 0.00392156862745098,
+    "shape_chw": [
+      3,
+      32,
+      32
+    ],
+    "source_dtype": "uint8",
+    "source_range": [
+      0,
+      255
+    ],
+    "zero_point": 0
+  },
+  "logit_scale": 3.431178138299115e-05,
+  "memory_layout": "see weights_mem/MEMORY_LAYOUT.md",
+  "project": "RupiahVision CNN FPGA V1",
+  "quantization": {
+    "accumulator": "INT32 with explicit overflow checks",
+    "activation_calibration": "maximum post-ReLU activation observed on train split",
+    "activations": "UINT8 after ReLU, zero_point=0",
+    "bias": "INT32",
+    "calibration_split": "train only",
+    "conv_requantization": "Q31 multiplier + signed shift",
+    "conv_weights": "symmetric signed INT8, per-output-channel, zero_point=0",
+    "fc_logits": "INT32 accumulators with one common positive logit scale",
+    "fc_weights": "symmetric signed INT8, per-tensor, zero_point=0",
+    "gap": "sum 8x8 quantized feature map; scale=activation3_scale/64",
+    "method": "post-training static quantization (custom integer reference)",
+    "parameter_rounding": "NumPy round-to-nearest-even",
+    "requantization_rounding": "round-to-nearest, ties upward for nonnegative values"
+  },
+  "test_split_accessed": false,
+  "validation": {
+    "fp32": {
+      "accuracy": 0.672514619883041,
+      "macro_f1": 0.672592042048293,
+      "macro_precision": 0.6716311608255342,
+      "macro_recall": 0.6912628376032156
+    },
+    "fp32_confusion_matrix": [
+      [
+        22,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        2,
+        25,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        20,
+        0,
+        1,
+        5
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        10,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        6,
+        16,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        11,
+        0,
+        0,
+        14
+      ]
+    ],
+    "fp32_per_class": [
+      {
+        "class_index": 0,
+        "correct": 22,
+        "denomination": "1000",
+        "f1": 0.8627450980392156,
+        "precision": 0.8461538461538461,
+        "recall": 0.88,
+        "support": 25
+      },
+      {
+        "class_index": 1,
+        "correct": 8,
+        "denomination": "2000",
+        "f1": 0.761904761904762,
+        "precision": 0.6666666666666666,
+        "recall": 0.8888888888888888,
+        "support": 9
+      },
+      {
+        "class_index": 2,
+        "correct": 25,
+        "denomination": "5000",
+        "f1": 0.819672131147541,
+        "precision": 0.8333333333333334,
+        "recall": 0.8064516129032258,
+        "support": 31
+      },
+      {
+        "class_index": 3,
+        "correct": 20,
+        "denomination": "10000",
+        "f1": 0.6557377049180328,
+        "precision": 0.5882352941176471,
+        "recall": 0.7407407407407407,
+        "support": 27
+      },
+      {
+        "class_index": 4,
+        "correct": 10,
+        "denomination": "20000",
+        "f1": 0.48780487804878053,
+        "precision": 0.625,
+        "recall": 0.4,
+        "support": 25
+      },
+      {
+        "class_index": 5,
+        "correct": 16,
+        "denomination": "50000",
+        "f1": 0.5818181818181818,
+        "precision": 0.5333333333333333,
+        "recall": 0.64,
+        "support": 25
+      },
+      {
+        "class_index": 6,
+        "correct": 14,
+        "denomination": "100000",
+        "f1": 0.5384615384615384,
+        "precision": 0.6086956521739131,
+        "recall": 0.4827586206896552,
+        "support": 29
+      }
+    ],
+    "int8": {
+      "accuracy": 0.6783625730994152,
+      "macro_f1": 0.6792357937016297,
+      "macro_precision": 0.677542638919367,
+      "macro_recall": 0.6977182171842905
+    },
+    "int8_confusion_matrix": [
+      [
+        23,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
+        24,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        19,
+        0,
+        1,
+        6
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        10,
+        13,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        6,
+        17,
+        0
+      ],
+      [
+        0,
+        0,
+        3,
+        11,
+        0,
+        0,
+        15
+      ]
+    ],
+    "int8_per_class": [
+      {
+        "class_index": 0,
+        "correct": 23,
+        "denomination": "1000",
+        "f1": 0.8846153846153846,
+        "precision": 0.8518518518518519,
+        "recall": 0.92,
+        "support": 25
+      },
+      {
+        "class_index": 1,
+        "correct": 8,
+        "denomination": "2000",
+        "f1": 0.761904761904762,
+        "precision": 0.6666666666666666,
+        "recall": 0.8888888888888888,
+        "support": 9
+      },
+      {
+        "class_index": 2,
+        "correct": 24,
+        "denomination": "5000",
+        "f1": 0.8135593220338982,
+        "precision": 0.8571428571428571,
+        "recall": 0.7741935483870968,
+        "support": 31
+      },
+      {
+        "class_index": 3,
+        "correct": 19,
+        "denomination": "10000",
+        "f1": 0.6440677966101694,
+        "precision": 0.59375,
+        "recall": 0.7037037037037037,
+        "support": 27
+      },
+      {
+        "class_index": 4,
+        "correct": 10,
+        "denomination": "20000",
+        "f1": 0.48780487804878053,
+        "precision": 0.625,
+        "recall": 0.4,
+        "support": 25
+      },
+      {
+        "class_index": 5,
+        "correct": 17,
+        "denomination": "50000",
+        "f1": 0.6071428571428571,
+        "precision": 0.5483870967741935,
+        "recall": 0.68,
+        "support": 25
+      },
+      {
+        "class_index": 6,
+        "correct": 15,
+        "denomination": "100000",
+        "f1": 0.5555555555555556,
+        "precision": 0.6,
+        "recall": 0.5172413793103449,
+        "support": 29
+      }
+    ],
+    "logit_mae": 0.16263443894069188,
+    "logit_rmse": 0.1792393360326469,
+    "prediction_agreement": 0.9707602339181286,
+    "saturation_count": {
+      "conv1": 0,
+      "conv2": 0,
+      "conv3": 0
+    },
+    "validation_images": 171
+  }
+}

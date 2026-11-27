@@ -1,0 +1,48 @@
+{
+    "status": "PASS",
+    "golden_images": 14,
+    "conv2_input_shape": [
+        14,
+        8,
+        16,
+        16
+    ],
+    "conv2_output_shape": [
+        14,
+        16,
+        16,
+        16
+    ],
+    "conv2_accumulator_shape": [
+        14,
+        16,
+        16,
+        16
+    ],
+    "input_layout": "[image][channel][y][x]",
+    "output_layout": "[image][output_channel][y][x]",
+    "kernel": [
+        3,
+        3
+    ],
+    "padding": "same_zero_padding",
+    "input_values": 28672,
+    "output_values": 57344,
+    "accumulator_values": 57344,
+    "final_logits_verification": "EXACT MATCH",
+    "test_split_accessed": false,
+    "files": {
+        "conv2_input_features_u8.mem": {
+            "sha256": "357ad9155644544b829819659d5cdbbd05770fae8aced07c6d142a81b50d953d",
+            "lines": 28672
+        },
+        "conv2_expected_outputs_u8.mem": {
+            "sha256": "e71ece55a51f337db2eb126db45800e48c1d309890fe0c6dfbeefb84a3748fb3",
+            "lines": 57344
+        },
+        "conv2_expected_acc_int32.mem": {
+            "sha256": "fd167b07bd0c7dcae0086766462535ab1607208c1d5fb675db550e77c17f0759",
+            "lines": 57344
+        }
+    }
+}

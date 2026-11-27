@@ -1,0 +1,58 @@
+{
+  "architecture_sha256": "ada27fc7e905c06e8876e5f6e2003dadd7586f2de0b11eb0c081423ce9bac141",
+  "baseline_validation_metrics": {
+    "best_epoch": 98,
+    "best_val_loss": 0.7797246916949401,
+    "device": "cpu",
+    "epochs_run": 100,
+    "mac_conv1": 221184,
+    "mac_conv2": 294912,
+    "mac_conv3": 221184,
+    "mac_fc": 168,
+    "mac_total": 737448,
+    "parameters": 5047,
+    "resolution": "32x32",
+    "train_images": 799,
+    "training_seconds": 51.46,
+    "val_accuracy": 0.672514619883041,
+    "val_balanced_accuracy": 0.6912628376032156,
+    "val_macro_f1": 0.672592042048293,
+    "val_macro_precision": 0.6716311608255342,
+    "val_macro_recall": 0.6912628376032156,
+    "validation_images": 171
+  },
+  "batch_norm": false,
+  "checkpoint_sha256": "8d0a3bae06a6a7fae0f916832f4bf83f7d6d776f09460b2dc6b745d020af6a66",
+  "class_map_sha256": "020a8a855196e5969f1727aaccde867afd8c6ebc85f3e483d1c187b67079f1ac",
+  "class_to_idx": {
+    "1000": 0,
+    "10000": 3,
+    "100000": 6,
+    "2000": 1,
+    "20000": 4,
+    "5000": 2,
+    "50000": 5
+  },
+  "dropout": false,
+  "epoch_98": {
+    "validation_accuracy": 0.672514619883041,
+    "validation_loss": 0.7797246916949401,
+    "validation_macro_f1": 0.672592042048293
+  },
+  "history_sha256": "1eeace7c5ef4fc782f9c0fb2e6e8db54914dfe4dd942e79bbbb29e97ef7e56ad",
+  "input_shape": [
+    3,
+    32,
+    32
+  ],
+  "mac_per_image": 737448,
+  "metrics_sha256": "711950aaf6e91e3801511d9c890fc9f4a69ec932ed39d5ddcfae6ebb649e16b5",
+  "normalization": "RGB uint8 converted to float32 and divided by 255.0",
+  "parameters": 5047,
+  "selected_checkpoint": "C:\\Users\\Victus\\Downloads\\New folder\\Uang Baru_rupiahvision_work\\cnn_training_v1\\experiment_32x32\\best_model_state_dict.pt",
+  "selected_epoch": 98,
+  "status": "PASS",
+  "weights_npz": "C:\\Users\\Victus\\Downloads\\New folder\\Uang Baru_rupiahvision_work\\cnn_training_v1\\experiment_32x32\\weights_fp32.npz",
+  "weights_npz_exact_match": true,
+  "weights_npz_sha256": "8fb2a2038f29fb167835b2586440036154d7e4d7378ed0ca9bf2f2a5f194a132"
+}

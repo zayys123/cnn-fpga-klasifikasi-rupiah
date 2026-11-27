@@ -270,7 +270,7 @@ def main():
             )
 
         if int(np.argmax(fc_logits)) != int(
-            golden["predicted_class_index"][image_index]
+            np.argmax(expected_logits[image_index])
         ):
             raise RuntimeError(
                 f"Predicted class mismatch at image {image_index}."

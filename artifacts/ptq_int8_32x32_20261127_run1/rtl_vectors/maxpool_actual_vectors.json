@@ -1,0 +1,15 @@
+{
+  "method": "Actual CNN MaxPool verification",
+  "golden_images": 14,
+  "pool1_vectors": 28672,
+  "pool2_vectors": 14336,
+  "total_vectors": 43008,
+  "record_width_bits": 48,
+  "record_width_hex": 12,
+  "layer_ids": {
+    "1": "Pool1 after Conv1",
+    "2": "Pool2 after Conv2"
+  },
+  "golden_logits_exact_match": true,
+  "output": "maxpool_actual_vectors.mem"
+}
