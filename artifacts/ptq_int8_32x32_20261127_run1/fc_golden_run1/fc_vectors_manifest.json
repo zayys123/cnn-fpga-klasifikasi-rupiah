@@ -1,0 +1,60 @@
+{
+    "status": "PASS",
+    "golden_images": 14,
+    "input_shape": [
+        14,
+        24
+    ],
+    "weight_shape": [
+        7,
+        24
+    ],
+    "bias_shape": [
+        7
+    ],
+    "output_shape": [
+        14,
+        7
+    ],
+    "input_dtype": "UINT14",
+    "weight_dtype": "INT8",
+    "bias_dtype": "INT32",
+    "accumulator_dtype": "INT32",
+    "input_layout": "[image][channel]",
+    "weight_layout": "[class][channel]",
+    "output_layout": "[image][class]",
+    "mac_operations_per_image": 168,
+    "total_mac_operations": 2352,
+    "logits_count": 98,
+    "class_count": 7,
+    "requantization": false,
+    "golden_logits_verification": "EXACT MATCH",
+    "logit_mismatches": 0,
+    "test_split_accessed": false,
+    "predicted_classes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "files": {
+        "fc_expected_logits_int32.mem": {
+            "sha256": "b7c9357039a26660c1a97977719ca6088a993ed502bdc72c1e63788fa2c6817f",
+            "lines": 98
+        },
+        "fc_expected_classes_u3.mem": {
+            "sha256": "89d4f1ca20172f9bcda81c75849de5ede0da3ab22ecadc03db32e2507684cdbb",
+            "lines": 14
+        }
+    }
+}
