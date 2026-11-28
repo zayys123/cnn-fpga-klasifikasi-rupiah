@@ -1,0 +1,37 @@
+{
+    "status": "PASS",
+    "golden_images": 14,
+    "input_shape": [
+        14,
+        24,
+        8,
+        8
+    ],
+    "output_shape": [
+        14,
+        24
+    ],
+    "input_layout": "[image][channel][y][x]",
+    "output_layout": "[image][channel]",
+    "operation": "unsigned_sum_over_8x8",
+    "division_by_64": false,
+    "input_values": 21504,
+    "output_values": 336,
+    "accumulator_width_bits": 14,
+    "maximum_theoretical_sum": 16320,
+    "actual_minimum": 0,
+    "actual_maximum": 6149,
+    "fc_logits_verification": "EXACT MATCH",
+    "fc_mismatches": 0,
+    "test_split_accessed": false,
+    "files": {
+        "gap_input_features_u8.mem": {
+            "sha256": "8c94e5a24a55093c00f79a342aa2cfbf1c6c70c3e36564838b7831bc70018cfd",
+            "lines": 21504
+        },
+        "gap_expected_sums_u14.mem": {
+            "sha256": "3a8c8d7efcb8d31b9507414681a28b38598620c8675ceac0a15dc56189cd71f6",
+            "lines": 336
+        }
+    }
+}
