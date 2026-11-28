@@ -1,0 +1,11 @@
+# Quartus generated files
+/verilog/fpga/quartus/db/
+/verilog/fpga/quartus/incremental_db/
+/verilog/fpga/quartus/output_files/
+/verilog/fpga/quartus/*.qws
+/verilog/fpga/quartus/*.qsf.backup
+
+# ModelSim generated files
+/verilog/fpga/testbench/work/
+/verilog/fpga/testbench/transcript
+/verilog/fpga/testbench/*.wlf
