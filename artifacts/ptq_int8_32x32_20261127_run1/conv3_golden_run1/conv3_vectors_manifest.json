@@ -1,0 +1,58 @@
+{
+    "status": "PASS",
+    "golden_images": 14,
+    "conv3_input_shape": [
+        14,
+        16,
+        8,
+        8
+    ],
+    "conv3_accumulator_shape": [
+        14,
+        24,
+        8,
+        8
+    ],
+    "conv3_output_shape": [
+        14,
+        24,
+        8,
+        8
+    ],
+    "input_layout": "[image][channel][y][x]",
+    "accumulator_layout": "[image][channel][y][x]",
+    "output_layout": "[image][channel][y][x]",
+    "input_values": 14336,
+    "accumulator_values": 21504,
+    "output_values": 21504,
+    "input_channels": 16,
+    "output_channels": 24,
+    "kernel": [
+        3,
+        3
+    ],
+    "padding": "same_zero_padding",
+    "stride": 1,
+    "tap_per_pixel": 144,
+    "saturation_counts": {
+        "conv1": 0,
+        "conv2": 0,
+        "conv3": 0
+    },
+    "final_logits_verification": "EXACT MATCH",
+    "test_split_accessed": false,
+    "files": {
+        "conv3_input_features_u8.mem": {
+            "sha256": "c78ba715d5158ec8b03b46a84fc3364d3d5c9ca0b323b9eb3b8ebe1367f91e6a",
+            "lines": 14336
+        },
+        "conv3_expected_acc_int32.mem": {
+            "sha256": "f4a7676a43d40c348859ea9c7866ee4f6a0227e37d845e254fd34acdb818250e",
+            "lines": 21504
+        },
+        "conv3_expected_outputs_u8.mem": {
+            "sha256": "8c94e5a24a55093c00f79a342aa2cfbf1c6c70c3e36564838b7831bc70018cfd",
+            "lines": 21504
+        }
+    }
+}
