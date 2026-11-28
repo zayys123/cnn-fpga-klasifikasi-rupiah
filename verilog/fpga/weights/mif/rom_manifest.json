@@ -1,0 +1,135 @@
+{
+  "project": "RupiahVision CNN FPGA",
+  "format": "Intel Quartus MIF",
+  "source": "artifacts\\ptq_int8_32x32_20261127_run1\\weights_mem",
+  "total_roms": 14,
+  "total_words": 5143,
+  "roms": [
+    {
+      "source": "conv1_weights_int8.mem",
+      "output": "conv1_weights_int8.mif",
+      "width": 8,
+      "depth": 216,
+      "encoding": "hex",
+      "source_sha256": "0626039761812ce0d8cbed5ac742950ddf3b7bd7a4023d581e8d5bfe4fc8966c",
+      "output_sha256": "9e2ba1154b9eb598d91150bfa05c71e09588f44307b4d194e9008390ef703493"
+    },
+    {
+      "source": "conv1_bias_int32.mem",
+      "output": "conv1_bias_int32.mif",
+      "width": 32,
+      "depth": 8,
+      "encoding": "hex",
+      "source_sha256": "767585f752dc6d3d1d15b2c6fd968810147326bc50d92a633a284fc285fd5304",
+      "output_sha256": "4a6c072dfe515bc69140f18ac4f227ff8e553210e3af9de3c875f1c736e54c5c"
+    },
+    {
+      "source": "conv1_requant_multiplier_q31.mem",
+      "output": "conv1_requant_multiplier_q31.mif",
+      "width": 32,
+      "depth": 8,
+      "encoding": "hex",
+      "source_sha256": "1daca9300be188fe80bc4ac93446f1f6e2edaa29ca85cde8fe617e7239126afc",
+      "output_sha256": "409eec002e557927114461fb01a188617ca462d5149020f6b45472d6c6fc2ce2"
+    },
+    {
+      "source": "conv1_requant_shift.txt",
+      "output": "conv1_requant_shift_s8.mif",
+      "width": 8,
+      "depth": 8,
+      "encoding": "signed",
+      "source_sha256": "1fc3c7b242367f4d9b3a2d25ad41bd6751dcf94dac919941e49b05b513b59446",
+      "output_sha256": "b37362102376796f6a075e8aa9c428e1e12e8698398c7ae77efa71fcd54beec5"
+    },
+    {
+      "source": "conv2_weights_int8.mem",
+      "output": "conv2_weights_int8.mif",
+      "width": 8,
+      "depth": 1152,
+      "encoding": "hex",
+      "source_sha256": "ab7628d725ef14b9996ac24a1a42aee73926caf4ea2215a07c91fdd65884e5ce",
+      "output_sha256": "1fe94357a90d44d29d4bcacd9eeb1da48d706596e27a7b36233f7885e7d7ba07"
+    },
+    {
+      "source": "conv2_bias_int32.mem",
+      "output": "conv2_bias_int32.mif",
+      "width": 32,
+      "depth": 16,
+      "encoding": "hex",
+      "source_sha256": "f9a16f1bb77f3b6eba6dca78fa3129f5f248f304779489cfda0001e352a7e96b",
+      "output_sha256": "419bb808adcebd4f8b039d0762c089ed299682e18fa1d46f99e746af5a5940ef"
+    },
+    {
+      "source": "conv2_requant_multiplier_q31.mem",
+      "output": "conv2_requant_multiplier_q31.mif",
+      "width": 32,
+      "depth": 16,
+      "encoding": "hex",
+      "source_sha256": "508df88a51aa4444d44f41bbd0dc1ce0774060af0096e94e6ff9c83c6e5557c2",
+      "output_sha256": "ff36ea202a4cdde88e925078632041eb1ee0211eb51c1b0c3e012169834eddab"
+    },
+    {
+      "source": "conv2_requant_shift.txt",
+      "output": "conv2_requant_shift_s8.mif",
+      "width": 8,
+      "depth": 16,
+      "encoding": "signed",
+      "source_sha256": "614ab09b2ea0e166cf4e9c869c605fabd8267bdbd0784a1b11405e53f5087d2d",
+      "output_sha256": "d52e4dbe36aab15cae32a9bb86efc360b643c8e84e018bb43987f9aef7264b9e"
+    },
+    {
+      "source": "conv3_weights_int8.mem",
+      "output": "conv3_weights_int8.mif",
+      "width": 8,
+      "depth": 3456,
+      "encoding": "hex",
+      "source_sha256": "094f6198378589cfd5a05bbf4009714613bbc91bb080631233e38dd7e6242c0a",
+      "output_sha256": "60a9c003d4c07db13a6ddd9df681c7c7b664c08aeb2de9864b6283b780b69896"
+    },
+    {
+      "source": "conv3_bias_int32.mem",
+      "output": "conv3_bias_int32.mif",
+      "width": 32,
+      "depth": 24,
+      "encoding": "hex",
+      "source_sha256": "8993911fce442fb78031259db32b5c8a3898f615ac9bcb1b2bb09688efee124e",
+      "output_sha256": "3ff8be808f560739b55fbafa04e28d18ddc3750e97fa024c64112ac5fcd592fa"
+    },
+    {
+      "source": "conv3_requant_multiplier_q31.mem",
+      "output": "conv3_requant_multiplier_q31.mif",
+      "width": 32,
+      "depth": 24,
+      "encoding": "hex",
+      "source_sha256": "2465d7de83a0a7c4ad495267ed785925d411a5238f0e2657746f8db56f14a20a",
+      "output_sha256": "1f319b5bc2cff7db8554c4f6a2446687fc632cd108cc56c45a2c1fc4e042ffd2"
+    },
+    {
+      "source": "conv3_requant_shift.txt",
+      "output": "conv3_requant_shift_s8.mif",
+      "width": 8,
+      "depth": 24,
+      "encoding": "signed",
+      "source_sha256": "dc34b5233d6020e659f4a5cde1c80877351e270122b61bc67640d76e41d98960",
+      "output_sha256": "009ae414083e5933d16b973cab300b45584d320d306df283ee727e5f89c91db7"
+    },
+    {
+      "source": "fc_weights_int8.mem",
+      "output": "fc_weights_int8.mif",
+      "width": 8,
+      "depth": 168,
+      "encoding": "hex",
+      "source_sha256": "66540152d27da7b695759701cbad53d816f1572adbdba61f51ce985372da3ecc",
+      "output_sha256": "cc257e584b4984da7adddd88114531448eec9fb3c0d96e709fa1e2d3190804c4"
+    },
+    {
+      "source": "fc_bias_int32.mem",
+      "output": "fc_bias_int32.mif",
+      "width": 32,
+      "depth": 7,
+      "encoding": "hex",
+      "source_sha256": "c2c73d14474c007bf19369ddb5c6bd590e86e192d67efa280757f0f49726e04b",
+      "output_sha256": "c2a7e8b4eac276ad7cdf4ad7f40b64f554397119cff72e6aa10fdcac08e659f2"
+    }
+  ]
+}

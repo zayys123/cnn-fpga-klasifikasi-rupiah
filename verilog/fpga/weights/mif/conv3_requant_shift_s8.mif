@@ -1,0 +1,32 @@
+WIDTH=8;
+DEPTH=24;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    0 : F3;
+    1 : F6;
+    2 : F5;
+    3 : F5;
+    4 : F4;
+    5 : F5;
+    6 : F5;
+    7 : F5;
+    8 : F3;
+    9 : F5;
+    10 : F5;
+    11 : F5;
+    12 : F3;
+    13 : F6;
+    14 : F3;
+    15 : F6;
+    16 : F5;
+    17 : F5;
+    18 : F5;
+    19 : F3;
+    20 : F6;
+    21 : F5;
+    22 : F6;
+    23 : F5;
+END;
